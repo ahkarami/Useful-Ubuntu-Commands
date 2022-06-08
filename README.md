@@ -22,3 +22,12 @@ or
 `ls|grep ".wav"|parallel -j$(nproc) soxi -D {}|awk '{SUM += $1} END { printf "%d:%d:%d\n",SUM/3600,SUM%3600/60,SUM%60}'`  
 --> [Reference1](https://www.commandlinefu.com/commands/view/13459/get-the-total-length-of-all-videos-in-the-current-dir-in-hms)  
 --> [Reference2](https://unix.stackexchange.com/questions/170961/get-total-duration-of-video-files-in-a-directory)  
+
+### Merge and concat all mp3 & wav files in a folder into a single file via ffmpeg:
+`find *.mp3 | sed 's:\ :\\\ :g'| sed 's/^/file /' > fl.txt; ffmpeg -f concat -i fl.txt -c copy output.mp3; rm fl.txt`  
+or  
+`ffmpeg -f concat -safe 0 -i <( for f in *.wav; do echo "file '$(pwd)/$f'"; done ) output.wav`  
+--> [Reference1](https://stackoverflow.com/questions/28922352/how-can-i-merge-all-the-videos-in-a-folder-to-make-a-single-video-file-using-ffm)  
+--> [Reference2](https://www.codegrepper.com/code-examples/shell/ffmpeg+merge+two+audio+files)  
+--> [Reference3](https://superuser.com/questions/571463/how-do-i-append-a-bunch-of-wav-files-while-retaining-not-zero-padded-numeric)  
+--> [Reference4](https://superuser.com/questions/587511/concatenate-multiple-wav-files-using-single-command-without-extra-file)  
