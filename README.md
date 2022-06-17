@@ -35,3 +35,7 @@ or
 --> [Reference2](https://www.codegrepper.com/code-examples/shell/ffmpeg+merge+two+audio+files)  
 --> [Reference3](https://superuser.com/questions/571463/how-do-i-append-a-bunch-of-wav-files-while-retaining-not-zero-padded-numeric)  
 --> [Reference4](https://superuser.com/questions/587511/concatenate-multiple-wav-files-using-single-command-without-extra-file)  
+
+### Split an audio file into some equal multiple parts:
+`ffmpeg -i input_file.mp3 -f segment -segment_time 3 -c copy out%03d.mp3`  
+--> [Reference1](https://unix.stackexchange.com/questions/280767/how-do-i-split-an-audio-file-into-multiple)  
