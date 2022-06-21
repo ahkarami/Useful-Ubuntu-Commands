@@ -44,3 +44,7 @@ or
 `for i in *.mp3; do ffmpeg -i "$i" -f wav "${i%}.wav"; done`  
 --> [Reference1](https://stackoverflow.com/questions/3255674/convert-audio-files-to-mp3-using-ffmpeg)  
 
+### Convert multiple audio files from `.wav` to `.mp3`:
+`for i in *.wav; do ffmpeg -i "$i" -f mp3 "${i%}.mp3"; done`  
+--> [Reference1](https://stackoverflow.com/questions/3255674/convert-audio-files-to-mp3-using-ffmpeg)  
+
