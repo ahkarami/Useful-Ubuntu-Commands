@@ -40,6 +40,15 @@ or
 `ffmpeg -i input_file.mp3 -f segment -segment_time 3 -c copy out%03d.mp3`  
 --> [Reference1](https://unix.stackexchange.com/questions/280767/how-do-i-split-an-audio-file-into-multiple)  
 
+### Split/Segment an audio file from `start_time` to `end_time`:  
+`ffmpeg -i input.mp3 -acodec copy -ss START_TIME -to END_TIME output.mp3`  
+or  
+`ffmpeg -i input.mp3 -ss 1.9 -to 3.5 -c copy output.mp3`  
+or for folder based usage of above command, one can use below command:  
+`for i in *.mp3; do ffmpeg -i "$i" -ss 0.0 -to 20.0 -c copy "../mp3_files_first_20_seconds/$i"; done`  
+--> [Reference1](https://unix.stackexchange.com/questions/280767/how-do-i-split-an-audio-file-into-multiple)  
+--> [Reference2](https://askubuntu.com/questions/1264779/how-to-split-an-mp3-file-by-detecting-silent-parts)  
+
 ### Convert multiple audio files from `.mp3` to `.wav`:
 `for i in *.mp3; do ffmpeg -i "$i" -f wav "${i%}.wav"; done`  
 --> [Reference1](https://stackoverflow.com/questions/3255674/convert-audio-files-to-mp3-using-ffmpeg)  
