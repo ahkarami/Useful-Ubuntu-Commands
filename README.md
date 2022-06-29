@@ -60,3 +60,8 @@ or for folder based usage of above command, one can use below command:
 ### Move (mv) milions of files of folder with extension `.wav` to another folder:
 `find . -name '*.wav' | xargs mv --target-directory=/path/to/dest_dir/`  
 --> [Reference1](https://tecadmin.net/mv-argument-list-too-long/)  
+
+### Find & count one word or phrase in a txt/csv file ubuntu command:  
+`grep "hello" train_data.csv`	--> will just show the results  
+`grep -c "hello" train_data.csv`	--> will count number of results  
+
