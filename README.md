@@ -65,3 +65,7 @@ or for folder based usage of above command, one can use below command:
 `grep "hello" train_data.csv`	--> will just show the results  
 `grep -c "hello" train_data.csv`	--> will count number of results  
 
+### List juts 10 first files in folder/directory:
+`ls | head -10`  
+
+--> [Reference1](https://www.freecodecamp.org/news/the-linux-ls-command-how-to-list-files-in-a-directory-with-options/) [great refrence for `ls` command]  
