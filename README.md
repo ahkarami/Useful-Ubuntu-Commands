@@ -72,3 +72,11 @@ or for folder based usage of above command, one can use below command:
 
 ### List just 10 last files in a folder/directory:
 `ls | tail -10`  
+
+### Find and replace text within a file using commands:
+--> Save in-place and replace all the word "original" to "new" word in "predictions_all.json" file.  
+`awk '{gsub(/original/,"new phrase")}1' ./input_manifest.json > ./output_manifest.json`  
+or  
+`sed -i 's/original/new/g' predictions_all.json`  
+--> [Reference1](https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands)  
+
