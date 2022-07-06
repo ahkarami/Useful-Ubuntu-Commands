@@ -80,3 +80,16 @@ or
 `sed -i 's/original/new/g' predictions_all.json`  
 --> [Reference1](https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands)  
 
+### Show specific line of file:
+`head -13 file_name | tail +13`  
+or  
+`sed -n '13p' file.txt`  
+or  
+`sed -n '20,25p' lines.txt`  
+or  
+`awk 'NR==5' lines.txt`  
+or  
+`awk 'NR>=20 && NR<=25' lines.txt`  
+
+--> [Reference1](https://linuxhandbook.com/display-specific-lines/)  
+--> [Reference2](https://stackoverflow.com/questions/191364/quick-unix-command-to-display-specific-lines-in-the-middle-of-a-file)  
