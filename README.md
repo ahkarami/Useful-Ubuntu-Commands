@@ -93,3 +93,10 @@ or
 
 --> [Reference1](https://linuxhandbook.com/display-specific-lines/)  
 --> [Reference2](https://stackoverflow.com/questions/191364/quick-unix-command-to-display-specific-lines-in-the-middle-of-a-file)  
+
+### Using `ffmpeg` to cut audio file from start to stop time:
+`ffmpeg -ss 1 -i input.wav -to 20 -c copy output.wav`  
+--> above command, will cut from second 1 to 20.  
+
+--> [Reference1](https://stackoverflow.com/questions/46508055/using-ffmpeg-to-cut-audio-from-to-position)  
+--> [Reference2](https://unix.stackexchange.com/questions/182602/trim-audio-file-using-start-and-stop-times)  
