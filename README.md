@@ -100,3 +100,6 @@ or
 
 --> [Reference1](https://stackoverflow.com/questions/46508055/using-ffmpeg-to-cut-audio-from-to-position)  
 --> [Reference2](https://unix.stackexchange.com/questions/182602/trim-audio-file-using-start-and-stop-times)  
+
+### Using `ffmpeg` to convert `stereo` to `mono` audio file:
+`ffmpeg -i stereo_input.wav -ac 1 mono_output.wav`  
