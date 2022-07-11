@@ -103,3 +103,15 @@ or
 
 ### Using `ffmpeg` to convert `stereo` to `mono` audio file:
 `ffmpeg -i stereo_input.wav -ac 1 mono_output.wav`  
+
+### Using `ffmpeg` to convert `stereo` to `mono` audio files (convert multiple files in a folder):
+`find . -name '*.mp3' -exec ffmpeg -i '{}' -ac 1 'mono_{}' \;
+for i in *.mp3; do ffmpeg -i "$i" -ac 1 "./output_folder/$i"; done`  
+or  
+`find . -name '*.mp3' -exec ffmpeg -i '{}' -ac 1 '{}_mono.mp3' \;
+for i in *.wav; do ffmpeg -i "$i" -ac 1 "${i%.*}.wav"; done`  
+
+--> [Reference1](https://stackoverflow.com/questions/39487643/how-to-convert-stereo-sound-to-mono-with-ffmpeg)  
+--> [Reference2](https://trac.ffmpeg.org/wiki/AudioChannelManipulation)  
+--> [Reference3](https://stackoverflow.com/questions/70698436/how-to-convert-multiple-stereo-audio-files-to-mono-using-ffmpeg)  
+
