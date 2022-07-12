@@ -115,3 +115,10 @@ for i in *.wav; do ffmpeg -i "$i" -ac 1 "${i%.*}.wav"; done`
 --> [Reference2](https://trac.ffmpeg.org/wiki/AudioChannelManipulation)  
 --> [Reference3](https://stackoverflow.com/questions/70698436/how-to-convert-multiple-stereo-audio-files-to-mono-using-ffmpeg)  
 
+### Using `ffmpeg` to convert `stereo` to `mono` audio files (extract just `Right` Channel):
+`ffmpeg -i stereo.wav -filter_complex "[0:a]channelsplit=channel_layout=stereo:channels=FR[right]" -map "[right]" front_right.wav`  
+or  
+`for i in *.mp3; do ffmpeg -i "$i" -filter_complex "[0:a]channelsplit=channel_layout=stereo:channels=FR[right]" -map "[right]" "./output_folder/$i"; done`  
+
+--> [Reference1](https://trac.ffmpeg.org/wiki/AudioChannelManipulation)  
+
