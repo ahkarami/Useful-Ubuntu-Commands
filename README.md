@@ -122,3 +122,10 @@ or
 
 --> [Reference1](https://trac.ffmpeg.org/wiki/AudioChannelManipulation)  
 
+### Using `ffmpeg` to convert `stereo` to `mono` audio files (extract just `Left` Channel):
+`ffmpeg -i stereo.wav -filter_complex "[0:a]channelsplit=channel_layout=stereo:channels=FL[left]" -map "[left]" front_left.wav`  
+or  
+`for i in *.mp3; do ffmpeg -i "$i" -filter_complex "[0:a]channelsplit=channel_layout=stereo:channels=FL[left]" -map "[left]" "./output_folder/$i"; done`  
+
+--> [Reference1](https://trac.ffmpeg.org/wiki/AudioChannelManipulation)  
+
