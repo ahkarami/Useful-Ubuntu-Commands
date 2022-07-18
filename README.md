@@ -129,3 +129,7 @@ or
 
 --> [Reference1](https://trac.ffmpeg.org/wiki/AudioChannelManipulation)  
 
+### Get date and time using command line:
+`date "+%H:%M:%S   %d/%m/%y"`  
+
+--> [Reference1](https://askubuntu.com/questions/634173/how-to-get-date-and-time-using-command-line-interface)  
