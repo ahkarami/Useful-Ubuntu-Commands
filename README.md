@@ -133,3 +133,12 @@ or
 `date "+%H:%M:%S   %d/%m/%y"`  
 
 --> [Reference1](https://askubuntu.com/questions/634173/how-to-get-date-and-time-using-command-line-interface)  
+
+### Schedule run ubuntu command at specific time:
+`at now +8 hours`  
+`at> python3 run_test.py  # type your desired command`  
+--> press `ctrl+D` to save the commands  
+
+--> [Reference1](https://linuxize.com/post/at-command-in-linux/)  
+--> [Reference2](https://www.geeksforgeeks.org/at-command-in-linux-with-examples/)  
+--> [Reference3](https://askubuntu.com/questions/339298/conveniently-schedule-a-command-to-run-later)  
