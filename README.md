@@ -142,3 +142,11 @@ or
 --> [Reference1](https://linuxize.com/post/at-command-in-linux/)  
 --> [Reference2](https://www.geeksforgeeks.org/at-command-in-linux-with-examples/)  
 --> [Reference3](https://askubuntu.com/questions/339298/conveniently-schedule-a-command-to-run-later)  
+ 
+ ### Do for example one command for each file in folder (ubuntu command):
+ `for i in *.mp3; do ffmpeg -i "$i" -ac 1 "./output_folder/$i"; done`  
+ or  
+ `for i in *.wav; do python run_code.py "$i"; done`  
+ --> "$i" is the name of input file  
+ --> [Reference1](https://stackoverflow.com/questions/10523415/execute-command-on-all-files-in-a-directory)  
+ 
