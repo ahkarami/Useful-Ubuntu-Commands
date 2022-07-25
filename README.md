@@ -150,3 +150,9 @@ or
  --> "$i" is the name of input file  
  --> [Reference1](https://stackoverflow.com/questions/10523415/execute-command-on-all-files-in-a-directory)  
  
+### Get output in Ubuntu:
+`ls > output_directory/ls_output.txt`  
+
+--> To redirect the output of a command to a file, type the command, specify the > or the >> operator, and then provide the path to a file you want to the output redirected to.  
+--> [Reference1](https://www.makeuseof.com/tag/save-command-line-output-file-windows-mac-linux/)  
+
