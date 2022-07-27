@@ -156,3 +156,6 @@ or
 --> To redirect the output of a command to a file, type the command, specify the > or the >> operator, and then provide the path to a file you want to the output redirected to.  
 --> [Reference1](https://www.makeuseof.com/tag/save-command-line-output-file-windows-mac-linux/)  
 
+### Split/segment audio file from start_time to end_time:
+`ffmpeg -i input.mp3 -acodec copy -ss START_TIME -to END_TIME output.mp3`  
+`ffmpeg -i input.mp3 -ss 1.9 -to 3.5 -c copy output.mp3`  
