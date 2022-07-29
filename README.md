@@ -159,3 +159,10 @@ or
 ### Split/segment audio file from start_time to end_time:
 `ffmpeg -i input.mp3 -acodec copy -ss START_TIME -to END_TIME output.mp3`  
 `ffmpeg -i input.mp3 -ss 1.9 -to 3.5 -c copy output.mp3`  
+
+### Split/segment audio files of a folder:
+`for i in *.mp3; do ffmpeg -i "$i" -ss 0.0 -to 20.0 -c copy "../mp3_files_20_first_seconds/$i"; done`  
+
+--> [Reference1](https://unix.stackexchange.com/questions/280767/how-do-i-split-an-audio-file-into-multiple)  
+--> [Reference2](https://askubuntu.com/questions/1264779/how-to-split-an-mp3-file-by-detecting-silent-parts)  
+
