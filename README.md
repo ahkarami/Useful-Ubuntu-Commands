@@ -166,3 +166,10 @@ or
 --> [Reference1](https://unix.stackexchange.com/questions/280767/how-do-i-split-an-audio-file-into-multiple)  
 --> [Reference2](https://askubuntu.com/questions/1264779/how-to-split-an-mp3-file-by-detecting-silent-parts)  
 
+### Change sudo or user password in ubuntu:
+`sudo passwd tom`  
+`sudo passwd root`  
+
+--> [Reference1](https://www.cyberciti.biz/faq/change-a-user-password-in-ubuntu-linux-using-passwd/)  
+--> [Reference2](https://vitux.com/how-to-change-sudo-password-in-ubuntu/)  
+
