@@ -173,3 +173,8 @@ or
 --> [Reference1](https://www.cyberciti.biz/faq/change-a-user-password-in-ubuntu-linux-using-passwd/)  
 --> [Reference2](https://vitux.com/how-to-change-sudo-password-in-ubuntu/)  
 
+### List all local users:
+`cut -d: -f1 /etc/passwd`  
+
+--> [Reference1](https://askubuntu.com/questions/410244/is-there-a-command-to-list-all-users-also-to-add-delete-modify-users-in-the/414561#414561)  
+
