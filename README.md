@@ -166,6 +166,12 @@ or
 --> [Reference1](https://unix.stackexchange.com/questions/280767/how-do-i-split-an-audio-file-into-multiple)  
 --> [Reference2](https://askubuntu.com/questions/1264779/how-to-split-an-mp3-file-by-detecting-silent-parts)  
 
+### Convert for example `8Khz` audio file to `16Khz` via ffmpeg:
+`ffmpeg -i input.mp3 -acodec pcm_s16le -ac 1 -ar 16000 output.wav`  
+`for i in ./*.wav; do ffmpeg -i "$i" -acodec pcm_s16le -ac 1 -ar 16000 "output_folder/$i"; done`  
+
+--> [Reference1](https://stackoverflow.com/questions/13358287/how-to-convert-any-mp3-file-to-wav-16khz-mono-16bit)  
+
 ### Change sudo or user password in ubuntu:
 `sudo passwd tom`  
 `sudo passwd root`  
