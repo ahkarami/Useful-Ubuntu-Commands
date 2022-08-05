@@ -184,3 +184,7 @@ or
 
 --> [Reference1](https://askubuntu.com/questions/410244/is-there-a-command-to-list-all-users-also-to-add-delete-modify-users-in-the/414561#414561)  
 
+### Move all files (but not folders) out of nested sub-directories into another folder (_e.g._, from `Downloads` folder to `Videos` folder):  
+`find ~/Downloads/ -type f -print0 | xargs -0 mv -t ~/Videos`  
+
+--> [Reference1](https://superuser.com/questions/658075/how-do-i-move-files-out-of-nested-subdirectories-into-another-folder-in-ubuntu)  
