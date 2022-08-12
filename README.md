@@ -188,3 +188,12 @@ or
 `find ~/Downloads/ -type f -print0 | xargs -0 mv -t ~/Videos`  
 
 --> [Reference1](https://superuser.com/questions/658075/how-do-i-move-files-out-of-nested-subdirectories-into-another-folder-in-ubuntu)  
+
+### Silence Detection in Audio File via ffmpeg:
+`ffmpeg -i input.wav -af silencedetect=n=-40dB:d=1.0 -f null -`  
+`ffmpeg -i input.wav -af silencedetect=n=-40dB:d=1.0 -f null - 2> ./silence.txt`  
+
+--> [Reference1](http://underpop.online.fr/f/ffmpeg/help/silencedetect.htm.gz)  
+--> [Reference2](https://textav.gitbook.io/textav-components/media-processing/detect-silence-open-source)  
+--> [Reference3](https://stackoverflow.com/questions/42507879/how-to-detect-the-silence-at-the-end-of-an-audio-file)  
+
