@@ -197,3 +197,7 @@ or
 --> [Reference2](https://textav.gitbook.io/textav-components/media-processing/detect-silence-open-source)  
 --> [Reference3](https://stackoverflow.com/questions/42507879/how-to-detect-the-silence-at-the-end-of-an-audio-file)  
 
+### Extract audio from video via ffmpeg:
+`ffmpeg -i sample.avi -q:a 0 -map a sample.mp3`  
+
+--> [Reference1](https://stackoverflow.com/questions/9913032/how-can-i-extract-audio-from-video-with-ffmpeg)  
