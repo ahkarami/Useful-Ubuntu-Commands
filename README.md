@@ -196,6 +196,7 @@ or
 --> [Reference1](http://underpop.online.fr/f/ffmpeg/help/silencedetect.htm.gz)  
 --> [Reference2](https://textav.gitbook.io/textav-components/media-processing/detect-silence-open-source)  
 --> [Reference3](https://stackoverflow.com/questions/42507879/how-to-detect-the-silence-at-the-end-of-an-audio-file)  
+--> [Reference4: Remove the Silent Parts of a Video Using FFmpeg and Python](https://donaldfeury.xyz/remove-the-silent-parts-of-a-video-using-ffmpeg-and-python/) [Important & Useful]  
 
 ### Extract audio from video via ffmpeg:
 `ffmpeg -i sample.avi -q:a 0 -map a sample.mp3`  
