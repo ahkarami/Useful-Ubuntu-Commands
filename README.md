@@ -202,3 +202,10 @@ or
 `ffmpeg -i sample.avi -q:a 0 -map a sample.mp3`  
 
 --> [Reference1](https://stackoverflow.com/questions/9913032/how-can-i-extract-audio-from-video-with-ffmpeg)  
+
+### Get output of ffmpeg in python:  
+--> [Reference1](https://donaldfeury.xyz/remove-the-silent-parts-of-a-video-using-ffmpeg-and-python/)  
+--> [Reference2](https://superkogito.github.io/blog/2020/03/19/ffmpeg_pipe.html)  
+--> [Reference3](https://www.programcreek.com/python/example/117479/ffmpeg.output)  
+--> [Reference4](https://github.com/kkroening/ffmpeg-python)  
+--> [Reference5](https://stackoverflow.com/questions/55001241/how-to-pipe-output-from-ffmpeg-using-python)  
