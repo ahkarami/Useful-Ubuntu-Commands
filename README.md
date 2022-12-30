@@ -209,3 +209,8 @@ or
 --> [Reference3](https://www.programcreek.com/python/example/117479/ffmpeg.output)  
 --> [Reference4](https://github.com/kkroening/ffmpeg-python)  
 --> [Reference5](https://stackoverflow.com/questions/55001241/how-to-pipe-output-from-ffmpeg-using-python)  
+
+### Increase Audio Volume via ffmpeg:
+--> [Reference1](https://trac.ffmpeg.org/wiki/AudioVolume)  
+--> [Reference2](https://stackoverflow.com/questions/60257883/is-it-possible-to-change-volume-with-no-reencode-with-ffmpeg)  
+--> [Reference3](https://superuser.com/questions/323119/how-can-i-normalize-audio-using-ffmpeg)  
