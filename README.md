@@ -214,3 +214,8 @@ or
 --> [Reference1](https://trac.ffmpeg.org/wiki/AudioVolume)  
 --> [Reference2](https://stackoverflow.com/questions/60257883/is-it-possible-to-change-volume-with-no-reencode-with-ffmpeg)  
 --> [Reference3](https://superuser.com/questions/323119/how-can-i-normalize-audio-using-ffmpeg)  
+
+### Empty swap in Ubuntu:
+`sudo swapoff -a; sudo swapon -a`  
+
+--> [Reference1](https://askubuntu.com/questions/1357/how-to-empty-swap-if-there-is-free-ram)  
