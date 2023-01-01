@@ -219,3 +219,7 @@ or
 `sudo swapoff -a; sudo swapon -a`  
 
 --> [Reference1](https://askubuntu.com/questions/1357/how-to-empty-swap-if-there-is-free-ram)  
+
+### How to Clear RAM Memory Cache, Buffer and Swap Space on Linux:
+--> [Reference1](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)  
+--> [Reference2](https://askubuntu.com/questions/1240959/memory-and-cpu-usage-on-kill-stop)  
