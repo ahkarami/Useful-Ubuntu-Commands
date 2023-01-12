@@ -223,3 +223,8 @@ or
 ### How to Clear RAM Memory Cache, Buffer and Swap Space on Linux:
 --> [Reference1](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)  
 --> [Reference2](https://askubuntu.com/questions/1240959/memory-and-cpu-usage-on-kill-stop)  
+
+### Kill all processes owned by a user "username":  
+`pkill -U username`  
+
+--> [Reference1](https://askubuntu.com/questions/104903/how-do-i-kill-processes-in-ubuntu)  
