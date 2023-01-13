@@ -228,3 +228,9 @@ or
 `pkill -U username`  
 
 --> [Reference1](https://askubuntu.com/questions/104903/how-do-i-kill-processes-in-ubuntu)  
+
+### Address problem of low memory of Sysytem:
+`sudo echo 1 > /proc/sys/vm/overcommit_memory`  
+
+--> [Reference1](https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type)  
+--> [Reference2](https://askubuntu.com/questions/1234114/trying-to-modify-proc-sys-vm-overcommit-memory-but-getting-permission-denied-e)  
