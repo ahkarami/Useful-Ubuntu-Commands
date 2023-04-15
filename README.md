@@ -234,3 +234,8 @@ or
 
 --> [Reference1](https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type)  
 --> [Reference2](https://askubuntu.com/questions/1234114/trying-to-modify-proc-sys-vm-overcommit-memory-but-getting-permission-denied-e)  
+
+### Convert Ubuntu Shell to Bash (that _e.g._, ctrl + l works correctly & clear screen):
+`/bin/bash`  or  `chsh -s /bin/bash`  
+--> [Reference1](https://superuser.com/questions/119179/how-can-i-change-shell-in-ubuntu)  
+--> [Reference2](https://askubuntu.com/questions/28969/how-do-you-change-the-default-shell-for-all-users-to-bash)  
