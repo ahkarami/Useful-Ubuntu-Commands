@@ -239,3 +239,7 @@ or
 `/bin/bash`  or  `chsh -s /bin/bash`  
 --> [Reference1](https://superuser.com/questions/119179/how-can-i-change-shell-in-ubuntu)  
 --> [Reference2](https://askubuntu.com/questions/28969/how-do-you-change-the-default-shell-for-all-users-to-bash)  
+
+### Most used Ubuntu terminal commands for manipulating CSV and text files:  
+- [Most used Ubuntu terminal commands for manipulating CSV and text files](https://github.com/ahkarami/Useful-Ubuntu-Commands/blob/main/commands_for_text_and_csv_files.md)  
+  
