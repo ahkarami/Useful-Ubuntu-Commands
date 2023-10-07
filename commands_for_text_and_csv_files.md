@@ -47,3 +47,9 @@ Here are some of the most used Ubuntu terminal commands for manipulating CSV and
 - To use tr to translate all spaces in a CSV file called data.csv to tabs, you would use the following command:  
 `tr ' ' '\t' data.csv`  
 
+---- ----- ------ -----
+### print the content of one specific line of a CSV file via Ubuntu terminal command:  
+- `sed -n '{line_number}p' csv_file`  
+- For example, to print the third line of the CSV file `my_csv_file.csv`, you would use the following command:  
+  - `sed -n '3p' my_csv_file.csv`  
+
